@@ -20,7 +20,7 @@ RUN apt-get update \
  && apt-get install -y ant
 
 RUN git clone github.com/butter/lucene-solr.git \
-  && git checkout tags/butter-solr/0.0.1
+  && git checkout tags/butter-solr/0.0.1 \
   && mv ./lucene-solr/lucene /opt/lucene \
   && mv ./lucene-solr/solr /opt/solr \
   && cd /opt/lucene \
