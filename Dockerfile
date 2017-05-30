@@ -26,6 +26,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
  && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN git clone git://github.com/butter/lucene-solr.git \
+ && git checkout tags/butter-solr/0.0.4 \
  && mv lucene-solr/lucene /opt/lucene \
  && mv lucene-solr/solr /opt/solr
 
